@@ -13,9 +13,9 @@ class Game:
         for row in range(rows):
             for col in range(cols):
                 if (row + col) % 2 == 0:
-                    color = (234, 235, 200) # light green
+                    color = (240,248,255) # white
                 else:
-                    color = (119, 154, 88) # dark green
+                    color = (255,64,64) # red
 
                 rect = (col * sq, row * sq, sq, sq)
                 pygame.draw.rect(surface, color, rect)
